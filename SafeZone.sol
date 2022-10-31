@@ -1456,29 +1456,29 @@ contract SafeZone is ERC20, Ownable {
 
     uint256 public swapTokensAtAmount = 200000 * (10**18);
 
-    uint256 private marketingBuyFees = 2;
-    uint256 private marketingSellFees = 2;
-    uint256 private marketingTransferFees = 2;
+    uint256 private marketingBuyFees = 1;
+    uint256 private marketingSellFees = 1;
+    uint256 private marketingTransferFees = 1;
 
-    uint256 private reserveBuyFee = 1;
-    uint256 private reserveSellFee = 1;
-    uint256 private reserveTransferFee = 1;
+    uint256 private reserveBuyFee = 0;
+    uint256 private reserveSellFee = 0;
+    uint256 private reserveTransferFee = 0;
 
     uint256 private growthFundBuyFee = 1;
     uint256 private growthFundSellFee = 1;
     uint256 private growthFundTransferFee = 1;
 
-    uint256 private liquidityBuyFee = 2;
-    uint256 private liquiditySellFee = 2;
-    uint256 private liquidityTransferFee = 2;
+    uint256 private liquidityBuyFee = 1;
+    uint256 private liquiditySellFee = 1;
+    uint256 private liquidityTransferFee = 1;
 
     uint256 private burnBuyFee = 1;
     uint256 private burnSellFee = 1;
     uint256 private burnTransferFee = 1;
 
-    uint256 private RewardsBuyFee = 5;
-    uint256 private RewardsSellFee = 5;
-    uint256 private RewardsTransferFee = 5;
+    uint256 private RewardsBuyFee = 1;
+    uint256 private RewardsSellFee = 1;
+    uint256 private RewardsTransferFee = 1;
 
     uint256 public totalBuyFees = marketingBuyFees.add(reserveBuyFee).add(liquidityBuyFee).add(RewardsBuyFee).add(growthFundBuyFee).add(burnBuyFee);
     uint256 public totalSellFees = marketingSellFees.add(reserveSellFee).add(liquiditySellFee).add(RewardsSellFee).add(growthFundSellFee).add(burnSellFee);
