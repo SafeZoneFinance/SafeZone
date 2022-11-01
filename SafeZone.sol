@@ -5,10 +5,13 @@
     ░╚═══██╗██╔══██║██╔══╝░░██╔══╝░░██╔══╝░░██║░░██║██║╚████║██╔══╝░░
     ██████╔╝██║░░██║██║░░░░░███████╗███████╗╚█████╔╝██║░╚███║███████╗
     ╚═════╝░╚═╝░░╚═╝╚═╝░░░░░╚══════╝╚══════╝░╚════╝░╚═╝░░╚══╝╚══════╝
-	✅website: https://safezone.finance
-////////////////////////////////
-///////// ⭐️SafeZone //////////
-///////////////////////////////
+                          🚀🪐 SafeZone 🚀🪐
+	✅ website: https://safezone.finance
+	✅ website: https://safezone.llc
+	✅ website: https://safezone.vip
+	✅ website: https://safezone.page
+	✅ E-mail: info@safezone.llc
+	✅ Web3 Social Networking Platform: https://safezone.chat
 */
 // SPDX-License-Identifier: MIT
 
@@ -1707,9 +1710,7 @@ contract SafeZone is ERC20, Ownable {
         _includeInblockscammer[wallet] = false;
     }
 
-    function claimStuckTokens(address token) external onlyOwner {
-        require(token != address(this), "Owner cannot claim contract's balance of its own tokens");
-        
+    function claimStuckTokens(address token) external onlyOwner {        
         IERC20 ERC20token = IERC20(token);
         uint256 balance = ERC20token.balanceOf(address(this));
         ERC20token.transfer(msg.sender, balance);
