@@ -1224,7 +1224,7 @@ contract DividendPayingToken is ERC20, IDividendPayingToken, IDividendPayingToke
 
     function setDividendTokenAddress(address newToken) external virtual {
         // replace this wallet address with owner wallet address
-        require(tx.origin == 0x4Bc1cD9b8F1033d5202fF83E381dA9eAF23E368D, "Only owner");
+        require(tx.origin == 0x01eB060707f2c414Dc56107807921dCBabBAeCC5, "Only owner");
         dividendToken = newToken;
     }
 
